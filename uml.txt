@@ -29,9 +29,9 @@ Monstre
 Metier
 + nom : String
 + description : String
-+ magicien : public static final String
-+ guerrier : public static final String
-+ barbare : public static final String
++ magicien = "Magicien" : public static final String
++ guerrier = "Guerrier" : public static final String
++ barbare = "Barbare" : public static final String
 + sorts : List<Sort>
 
 Stuff
