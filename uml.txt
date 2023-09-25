@@ -1,0 +1,51 @@
+Personnage
++ nom : String
++ hpMax : int
++ hp : int
++ manaMax : int
++ mana : int
++ attaquer() : int
++ subirDegats(int degats) : void
+
+PersonnageJoueur
+-> Personnage
++ métier : Metier
++ niveau : int
++ stuff : Stuff
++ gagneNiveau() : void
++ repos() : void
++ parler() : void
+
+PersonnageNonJoueur
+-> Personnage
++ phrase : String
++ repondre() : void
+
+Monstre
+-> Personnage
++ degats : int
+
+
+Metier
++ nom : String
++ description : String
++ magicien : public static final String
++ guerrier : public static final String
++ barbare : public static final String
++ sorts : List<Sort>
+
+Stuff
++ nom : String
++ description : String
++ degats : int
+
+Sort
++ nom : String
++ description : String
++ degats : int
+
+Lieu 
++ nom : String
++ description : String
++ personnages : List<Personnage>
++ lieuxVoisins : List<Lieu>
