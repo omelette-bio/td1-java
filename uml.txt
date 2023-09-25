@@ -6,6 +6,7 @@ Personnage
 + mana : int
 + attaquer() : int
 + subirDegats(int degats) : void
++ lancerSort(Sort sort) : int
 
 PersonnageJoueur
 -> Personnage
@@ -24,7 +25,6 @@ PersonnageNonJoueur
 Monstre
 -> Personnage
 + degats : int
-
 
 Metier
 + nom : String
