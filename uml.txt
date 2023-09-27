@@ -53,3 +53,4 @@ Lieu
 Jeu
 + display_text(String text) : void
 + choice(String[] choices) : int
++ display_fight(PersonnageJoueur pj, Monstre m) : void
