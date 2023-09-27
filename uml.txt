@@ -49,3 +49,7 @@ Lieu
 + description : String
 + personnages : List<Personnage>
 + lieuxVoisins : List<Lieu>
+
+Jeu
++ display_text(String text) : void
++ choice(String[] choices) : int

@@ -29,6 +29,7 @@ public class Jeu {
     jeu.display_text("Mais avant tout, comment ça va ?");
     
     int result = jeu.choice(new String[]{"Bien", "Mal"});
+    
     if (result == 1) {
       jeu.display_text("C'est bien !");
     } else {
@@ -36,5 +37,6 @@ public class Jeu {
       jeu.display_text("Tu devrais aller voir un psy !");
       return;
     }
+    
   }
 }
