@@ -37,7 +37,7 @@ Metier
 + magicien = "Magicien" : public static final String
 + guerrier = "Guerrier" : public static final String
 + barbare = "Barbare" : public static final String
-+ sorts : List<Sort>
++ sorts : ArrayList<Sort>
 
 Stuff
 + nom : String
@@ -58,8 +58,8 @@ Lieu
 + zone3 = "Crypte" : public static final String
 + zone4 = "Volcan" : public static final String
 + nom : String
-+ personnages : List<Personnage>
-+ lieuxVoisins : List<Lieu>
++ personnages : ArrayList<Personnage>
++ lieuxVoisins : ArrayList<Lieu>
 
 Jeu
 + display_text(String text) : void
