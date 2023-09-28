@@ -60,6 +60,7 @@ Lieu
 + nom : String
 + personnages : ArrayList<Personnage>
 + lieuxVoisins : ArrayList<Lieu>
++ addVoisin(Lieu l) : void
 
 Jeu
 + display_text(String text) : void
