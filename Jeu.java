@@ -1,8 +1,11 @@
 import java.util.Scanner;
 
 public class Jeu {
+
+  // method to display text with a delay of 0.6s to make it more realistic
   public void display_text(String text){
     System.out.println(text);
+    // the part of the code that makes the delay
     try {
       Thread.sleep(600);
     } catch (InterruptedException e) {
@@ -10,11 +13,13 @@ public class Jeu {
     }
   }
 
+  // method to display the various choices of the player, the choices are in a String array
   public int choice(String[] choices){
     for (int i = 0; i < choices.length; i++) {
       System.out.print(i + 1 + ". " + choices[i] + "\t");
     }
     System.out.println();
+    // setting up the scanner to get the player's choice, then closing it to avoid memory leaks
     Scanner sc = new Scanner(System.in);
     int choix = sc.nextInt();
     sc.close();
