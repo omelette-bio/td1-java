@@ -56,11 +56,11 @@ public class Jeu {
 
     jeu.display_text("Quel est ton metier ?");
 
-    String[] metier = new String[]{"Guerrier", "Mage", "Voleur"};
+    String[] metier = new String[]{"Guerrier", "Mage", "Barbare"};
 
     int choice = jeu.choice(metier);
 
-    PersonnageJoueur joueur = new PersonnageJoueur(name, metier[choice-1], "Epée");
+    PersonnageJoueur joueur = new PersonnageJoueur(name, choice);
 
     jeu.display_text(joueur.nom + " le " + joueur.metierJoueur + " est né ! Ton histoire sera inscrite dans les légendes !");
     jeu.display_text("Mais avant ca, il faut que tu te trouves un équipement !");

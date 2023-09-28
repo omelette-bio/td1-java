@@ -14,6 +14,5 @@ public class Metier {
 
     public Metier(String nom) {
         this.nom = nom;
-        // if (this.nom == magicien){}
     }
 }

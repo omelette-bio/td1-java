@@ -2,9 +2,16 @@ public class PersonnageJoueur extends Personnage{
     protected String metierJoueur;
     protected String equipementJoueur;
     
-    PersonnageJoueur(String nomJ, String metierJ, String equipementJ){
+    PersonnageJoueur(String nomJ, int metierJ){
         super(nomJ);
-        this.metierJoueur = metierJ;
-        this.equipementJoueur = equipementJ;
+        if (metierJ == 1) {
+            this.metierJoueur = Metier.magicien;
+        }
+        else if (metierJ == 2) {
+            this.metierJoueur = Metier.guerrier;
+        }
+        else{
+            this.metierJoueur = Metier.barbare;
+        }
     }
 }
