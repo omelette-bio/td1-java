@@ -38,7 +38,7 @@ public class Jeu {
     jeu.display_text("Je suis votre guide, votre maitre de jeu !");
     jeu.display_text("Mais avant tout, comment ca va ?");
     
-    int result = jeu.choice(new String[]{"Bien", "Mal"});
+    /* int result = jeu.choice(new String[]{"Bien", "Mal"});
     
     if (result == 1) {
       jeu.display_text("Content de l'apprendre !");
@@ -46,7 +46,7 @@ public class Jeu {
       jeu.display_text("C'est pas bien !");
       jeu.display_text("Tu devrais aller voir un psy !");
       return;
-    }
+    } */
     
     jeu.display_text("Bien, passons à la création de ton personnage !");
     jeu.display_text("Quel est ton nom aventurier ?");
