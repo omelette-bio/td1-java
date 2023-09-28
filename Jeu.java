@@ -29,6 +29,7 @@ public class Jeu {
 
   public static void main(String[] args) {
     Jeu jeu = new Jeu();
+    
     jeu.display_text("Bonjour aventurier !");
     jeu.display_text("Bienvenue dans les nuits de Padhiver !");
     jeu.display_text("Je suis votre guide, votre maitre de jeu !");
@@ -44,7 +45,7 @@ public class Jeu {
       return;
     }
     
-    jeu.display_text("Bien, passons à la création de votre personnage !");
+    jeu.display_text("Bien, passons à la création de ton personnage !");
     jeu.display_text("Quel est ton nom aventurier ?");
 
     String name = jeu.sc.next();
