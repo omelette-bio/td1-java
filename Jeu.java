@@ -9,7 +9,7 @@ public class Jeu {
         System.out.println("> "+text);
         // the part of the code that makes the delay
         try {
-        Thread.sleep(1000);
+        Thread.sleep(900);
         } catch (InterruptedException e) {
         e.printStackTrace();
         }
