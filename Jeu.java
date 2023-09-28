@@ -22,8 +22,11 @@ public class Jeu {
     }
     System.out.println();
     // setting up the scanner to get the player's choice, then closing it to avoid memory leaks
-    int choix = sc.nextInt();
-    return choix;
+    int select = sc.nextInt();
+    if (select > choices.length || select < 1) {
+      select = 1;
+    }
+    return select;
   }
 
 
@@ -51,9 +54,19 @@ public class Jeu {
     String name = jeu.sc.next();
     jeu.display_text(name + " ? C'est un joli nom !");
 
-    PersonnageJoueur joueur = new PersonnageJoueur(name, "Guerrier", "Epée");
+    jeu.display_text("Quel est ton metier ?");
 
-    
+    String[] metier = new String[]{"Guerrier", "Mage", "Voleur"};
+
+    int choice = jeu.choice(metier);
+
+    PersonnageJoueur joueur = new PersonnageJoueur(name, metier[choice-1], "Epée");
+
+    jeu.display_text(joueur.nom + " le " + joueur.metierJoueur + " est né ! Ton histoire sera inscrite dans les légendes !");
+    jeu.display_text("Mais avant ca, il faut que tu te trouves un équipement !");
+    jeu.display_text(name + ", tiens, prends donc cette " + joueur.equipementJoueur + " !");
+
+    PersonnageNonJoueur pnj1 = new PersonnageNonJoueur("Carlo", "*regarde dans le vide, attendant que quelque chose se passe*");
 
     jeu.sc.close();
   }
