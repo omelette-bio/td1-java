@@ -1,6 +1,6 @@
 public class PersonnageJoueur extends Personnage{
     protected String metierJoueur;
-    protected String equipementJoureur;
+    protected String equipementJoueur;
     
     PersonnageJoueur(String nomJ, String metierJ, String equipementJ){
         super(nomJ);
