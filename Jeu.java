@@ -66,7 +66,12 @@ public class Jeu {
     jeu.display_text("Mais avant ca, il faut que tu te trouves un équipement !");
     jeu.display_text(name + ", tiens, prends donc cette " + joueur.equipementJoueur + " !");
 
+    /* 
     PersonnageNonJoueur pnj1 = new PersonnageNonJoueur("Carlo", "*regarde dans le vide, attendant que quelque chose se passe*");
+    PersonnageNonJoueur pnj2 = new PersonnageNonJoueur("placeholder", "placeholder");
+    PersonnageNonJoueur pnj3 = new PersonnageNonJoueur("placeholder", "placeholder");
+    PersonnageNonJoueur pnj4 = new PersonnageNonJoueur("Werwilld", "placeholder");
+    */
 
     jeu.sc.close();
   }

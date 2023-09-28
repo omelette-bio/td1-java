@@ -25,6 +25,11 @@ PersonnageNonJoueur
 Monstre
 -> Personnage
 + degats : int
++ orc = "Orc" : public static final String
++ gobelin = "Gobelin" : public static final String
++ chauveSouris = "Chauve-souris" : public static final String
++ necromant = "Nécromant" : public static final String
++ dragon = "Dragon" : public static final String
 
 Metier
 + nom : String
