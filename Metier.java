@@ -12,7 +12,20 @@ public class Metier {
     public static final String barbare = "barbare";
     public static final String barbareDescription = "Le barbare est un personnage qui utilise la force pour se battre.";
 
-    public Metier(String nom) {
-        this.nom = nom;
+    public Metier(int metier) {
+        switch (metier) {
+            case 1:
+                this.nom = magicien;
+                this.description = magicienDescription;
+                break;
+            case 2:
+                this.nom = guerrier;
+                this.description = guerrierDescription;
+                break;
+            default:
+                this.nom = barbare;
+                this.description = barbareDescription;
+                break;
+        }
     }
 }
