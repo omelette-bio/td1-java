@@ -5,11 +5,11 @@ public class Metier {
     protected String description;
     protected ArrayList<Sort> sorts = new ArrayList<>();
 
-    public static final String magicien = "magicien";
+    public static final String magicien = "Magicien";
     public static final String magicienDescription = "Le magicien est un personnage qui utilise la magie pour se battre.";
-    public static final String guerrier = "guerrier";
+    public static final String guerrier = "Guerrier";
     public static final String guerrierDescription = "Le guerrier est un personnage qui utilise la force pour se battre.";
-    public static final String barbare = "barbare";
+    public static final String barbare = "Barbare";
     public static final String barbareDescription = "Le barbare est un personnage qui utilise la force pour se battre.";
 
     public Metier(int metier) {

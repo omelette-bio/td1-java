@@ -4,12 +4,12 @@ public class Jeu {
 
     Scanner sc = new Scanner(System.in);
 
-    // method to display text with a delay of 0.6s to make it more realistic
+    // method to display text with a delay of 1s to make it more realistic
     public void display_text(String text){
         System.out.println("> "+text);
         // the part of the code that makes the delay
         try {
-        Thread.sleep(600);
+        Thread.sleep(1000);
         } catch (InterruptedException e) {
         e.printStackTrace();
         }
@@ -36,9 +36,9 @@ public class Jeu {
         jeu.display_text("Bonjour aventurier !");
         jeu.display_text("Bienvenue dans les nuits de Padhiver !");
         jeu.display_text("Je suis votre guide, votre maitre de jeu !");
-        jeu.display_text("Mais avant tout, comment ca va ?");
         
-        /* int result = jeu.choice(new String[]{"Bien", "Mal"});
+        /* jeu.display_text("Mais avant tout, comment ça va ?");
+        int result = jeu.choice(new String[]{"Bien", "Mal"});
         
         if (result == 1) {
         jeu.display_text("Content de l'apprendre !");
@@ -54,7 +54,13 @@ public class Jeu {
         String name = jeu.sc.next();
         jeu.display_text(name + " ? C'est un joli nom !");
 
-        jeu.display_text("Quel est ton metier ?");
+        jeu.display_text("Il est l'heure de choisir ton metier !");
+        jeu.display_text("laisse moi te les présenter :");
+        jeu.display_text("Le " + Metier.magicien + " : " + Metier.magicienDescription);
+        jeu.display_text("Le " + Metier.guerrier + " : " + Metier.guerrierDescription);
+        jeu.display_text("Le " + Metier.barbare + " : " + Metier.barbareDescription);
+
+        jeu.display_text("Qui veux-tu être ?");
 
         String[] metier = new String[]{Metier.magicien, Metier.guerrier, Metier.barbare};
 
@@ -63,7 +69,7 @@ public class Jeu {
         PersonnageJoueur joueur = new PersonnageJoueur(name, choice);
 
         jeu.display_text(joueur.nom + " le " + joueur.metierJoueur.nom + " est né ! Ton histoire sera inscrite dans les légendes !");
-        jeu.display_text("Mais avant ca, il faut que tu te trouves un équipement !");
+        jeu.display_text("Mais avant ça, il faut que tu te trouves un équipement !");
 
         /* 
         PersonnageNonJoueur pnj1 = new PersonnageNonJoueur("Carlo", "*regarde dans le vide, attendant que quelque chose se passe*");
