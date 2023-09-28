@@ -1,7 +1,7 @@
 public class Monstre extends Personnage{
     int degatsMonstre;
-    Monstre(String nomMonstre){
+    Monstre(String nomMonstre, int degatsM){
         super(nomMonstre);
-        this.degatsMonstre = 1;
+        this.degatsMonstre = degatsM;
     }
 }
