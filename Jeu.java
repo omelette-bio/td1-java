@@ -53,6 +53,7 @@ public class Jeu {
 
     PersonnageJoueur joueur = new PersonnageJoueur(name, "Guerrier", "Epée");
 
+    
 
     jeu.sc.close();
   }

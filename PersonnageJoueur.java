@@ -5,6 +5,6 @@ public class PersonnageJoueur extends Personnage{
     PersonnageJoueur(String nomJ, String metierJ, String equipementJ){
         super(nomJ);
         this.metierJoueur = metierJ;
-        this.equipementJoureur = equipementJ;
+        this.equipementJoueur = equipementJ;
     }
 }
