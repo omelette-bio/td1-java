@@ -50,8 +50,14 @@ Sort
 + degats : int
 
 Lieu 
++ ville = "Padhiver" : public static final String
++ route1 = "Route Nord" : public static final String
++ route2 = "Route Sud" : public static final String
++ zone1 = "Forêt" : public static final String
++ zone2 = "Marais des morts" : public static final String
++ zone3 = "Crypte" : public static final String
++ zone4 = "Volcan" : public static final String
 + nom : String
-+ description : String
 + personnages : List<Personnage>
 + lieuxVoisins : List<Lieu>
 

@@ -71,6 +71,8 @@ public class Jeu {
     PersonnageNonJoueur pnj2 = new PersonnageNonJoueur("placeholder", "placeholder");
     PersonnageNonJoueur pnj3 = new PersonnageNonJoueur("placeholder", "placeholder");
     PersonnageNonJoueur pnj4 = new PersonnageNonJoueur("Werwilld", "placeholder");
+
+    Lieu lieu1 = new Lieu("Padhiver")
     */
 
     jeu.sc.close();
