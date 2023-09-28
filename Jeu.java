@@ -72,7 +72,11 @@ public class Jeu {
     PersonnageNonJoueur pnj3 = new PersonnageNonJoueur("placeholder", "placeholder");
     PersonnageNonJoueur pnj4 = new PersonnageNonJoueur("Werwilld", "placeholder");
 
-    Lieu lieu1 = new Lieu("Padhiver")
+    ArrayList<PersonnageNonJoueur> pnjs_town = new ArrayList<PersonnageNonJoueur>();
+    pnjs_town.add(pnj1);
+    pnjs_town.add(pnj2);
+
+    Lieu lieu1 = new Lieu("Padhiver", pnjs_town);
     */
 
     jeu.sc.close();
