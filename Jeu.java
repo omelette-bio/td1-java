@@ -71,12 +71,24 @@ public class Jeu {
     PersonnageNonJoueur pnj2 = new PersonnageNonJoueur("placeholder", "placeholder");
     PersonnageNonJoueur pnj3 = new PersonnageNonJoueur("placeholder", "placeholder");
     PersonnageNonJoueur pnj4 = new PersonnageNonJoueur("Werwilld", "placeholder");
-
+    
     ArrayList<PersonnageNonJoueur> pnjs_town = new ArrayList<PersonnageNonJoueur>();
     pnjs_town.add(pnj1);
     pnjs_town.add(pnj2);
 
+    ArrayList<PersonnageNonJoueur> pnjs_route1 = new ArrayList<PersonnageNonJoueur>();
+    pnjs_route1.add(pnj3);
+
+    ArrayList<PersonnageNonJoueur> pnjs_route2 = new ArrayList<PersonnageNonJoueur>();
+    pnjs_route2.add(pnj4);
+
+
     Lieu lieu1 = new Lieu("Padhiver", pnjs_town);
+    Lieu lieu2 = new Lieu("Route Nord", pnjs_route1);
+    Lieu lieu3 = new Lieu("Route Sud", pnjs_route2);
+
+    lieu1.addVoisin(lieu2);
+    lieu1.addVoisin(lieu3);
     */
 
     jeu.sc.close();
