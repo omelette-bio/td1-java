@@ -71,7 +71,7 @@ public class Jeu {
         jeu.display_text(joueur.nom + " le " + joueur.metierJoueur.nom + " est né ! Ton histoire sera inscrite dans les légendes !");
         jeu.display_text("Mais avant ça, il faut que tu te trouves un équipement !");
 
-        /* PersonnageNonJoueur pnj1 = new PersonnageNonJoueur("Carlo", "*regarde dans le vide, attendant que quelque chose se passe*");
+        /* PersonnageNonJoueur pnj1 = new PersonnageNonJoueur("Carlos", "*regarde dans le vide, attendant que quelque chose se passe*");
         PersonnageNonJoueur pnj2 = new PersonnageNonJoueur("placeholder", "Tu es venu voler or noir moi !!!??! Moi était là avant !!");
         PersonnageNonJoueur pnj3 = new PersonnageNonJoueur("placeholder", "placeholder");
         PersonnageNonJoueur pnj4 = new PersonnageNonJoueur("Werwilld", "placeholder");
