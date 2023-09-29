@@ -6,7 +6,7 @@ public class Metier {
     protected ArrayList<Sort> sorts = new ArrayList<>();
 
     public static final String magicien = "Magicien";
-    public static final String magicienDescription = "Le magicien est un personnage qui utilise la magie pour se battre.";
+    public static final String magicienDescription = "Le magicien est un personnage possédant des pouvoirs magiques, boules de feu et rayons de glace font partie de son arsenal.";
     public static final String guerrier = "Guerrier";
     public static final String guerrierDescription = "Le guerrier est un personnage qui utilise la force pour se battre.";
     public static final String barbare = "Barbare";
