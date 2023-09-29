@@ -9,22 +9,22 @@ public class Jeu {
         System.out.println("> "+text);
         // the part of the code that makes the delay
         try {
-        Thread.sleep(900);
+            Thread.sleep(900);
         } catch (InterruptedException e) {
-        e.printStackTrace();
+            e.printStackTrace();
         }
     }
 
     // method to display the various choices of the player, the choices are in a String array
     public int choice(String[] choices){
         for (int i = 0; i < choices.length; i++) {
-        System.out.print(i + 1 + ". " + choices[i] + "  ");
+            System.out.print(i + 1 + ". " + choices[i] + "  ");
         }
         System.out.println();
         // setting up the scanner to get the player's choice, then closing it to avoid memory leaks
         int select = sc.nextInt();
         if (select > choices.length || select < 1) {
-        select = 1;
+            select = 1;
         }
         return select;
     }
@@ -41,11 +41,11 @@ public class Jeu {
         int result = jeu.choice(new String[]{"Bien", "Mal"});
         
         if (result == 1) {
-        jeu.display_text("Content de l'apprendre !");
+            jeu.display_text("Content de l'apprendre !");
         } else {
-        jeu.display_text("C'est pas bien !");
-        jeu.display_text("Tu devrais aller voir un psy !");
-        return;
+            jeu.display_text("C'est pas bien !");
+            jeu.display_text("Tu devrais aller voir un psy !");
+            return;
         } */
         
         jeu.display_text("Bien, passons à la création de ton personnage !");
