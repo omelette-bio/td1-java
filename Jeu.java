@@ -5,7 +5,7 @@ public class Jeu {
     Scanner sc = new Scanner(System.in);
 
     // method to display text with a delay of 1s to make it more realistic
-    public void display_text(String text){
+    public void displayText(String text){
         System.out.println("> "+text);
         // the part of the code that makes the delay
         try {
@@ -33,34 +33,34 @@ public class Jeu {
     public static void main(String[] args) {
         Jeu jeu = new Jeu();
 
-        jeu.display_text("Bonjour aventurier !");
-        jeu.display_text("Bienvenue dans les nuits de Padhiver !");
-        jeu.display_text("Je suis votre guide, votre maitre de jeu !");
+        jeu.displayText("Bonjour aventurier !");
+        jeu.displayText("Bienvenue dans les nuits de Padhiver !");
+        jeu.displayText("Je suis votre guide, votre maitre de jeu !");
         
-        /* jeu.display_text("Mais avant tout, comment ça va ?");
+        /* jeu.displayText("Mais avant tout, comment ça va ?");
         int result = jeu.choice(new String[]{"Bien", "Mal"});
         
         if (result == 1) {
-            jeu.display_text("Content de l'apprendre !");
+            jeu.displayText("Content de l'apprendre !");
         } else {
-            jeu.display_text("C'est pas bien !");
-            jeu.display_text("Tu devrais aller voir un psy !");
+            jeu.displayText("C'est pas bien !");
+            jeu.displayText("Tu devrais aller voir un psy !");
             return;
         } */
         
-        jeu.display_text("Bien, passons à la création de ton personnage !");
-        jeu.display_text("Quel est ton nom aventurier ?");
+        jeu.displayText("Bien, passons à la création de ton personnage !");
+        jeu.displayText("Quel est ton nom aventurier ?");
 
         String name = jeu.sc.next();
-        jeu.display_text(name + " ? C'est un joli nom !");
+        jeu.displayText(name + " ? C'est un joli nom !");
 
-        jeu.display_text("Il est l'heure de choisir ton metier !");
-        jeu.display_text("laisse moi te les présenter :");
-        jeu.display_text("Le " + Metier.magicien + " : " + Metier.magicienDescription);
-        jeu.display_text("Le " + Metier.guerrier + " : " + Metier.guerrierDescription);
-        jeu.display_text("Le " + Metier.barbare + " : " + Metier.barbareDescription);
+        jeu.displayText("Il est l'heure de choisir ton metier !");
+        jeu.displayText("laisse moi te les présenter :");
+        jeu.displayText("Le " + Metier.magicien + " : " + Metier.magicienDescription);
+        jeu.displayText("Le " + Metier.guerrier + " : " + Metier.guerrierDescription);
+        jeu.displayText("Le " + Metier.barbare + " : " + Metier.barbareDescription);
 
-        jeu.display_text("Qui veux-tu être ?");
+        jeu.displayText("Qui veux-tu être ?");
 
         String[] metier = new String[]{Metier.magicien, Metier.guerrier, Metier.barbare};
 
@@ -68,8 +68,8 @@ public class Jeu {
 
         PersonnageJoueur joueur = new PersonnageJoueur(name, choice);
 
-        jeu.display_text(joueur.nom + " le " + joueur.metierJoueur.nom + " est né ! Ton histoire sera inscrite dans les légendes !");
-        jeu.display_text("Mais avant ça, il faut que tu te trouves un équipement !");
+        jeu.displayText(joueur.nom + " le " + joueur.metierJoueur.nom + " est né ! Ton histoire sera inscrite dans les légendes !");
+        jeu.displayText("Mais avant ça, il faut que tu te trouves un équipement !");
 
         /* PersonnageNonJoueur pnj1 = new PersonnageNonJoueur("Carlos", "*regarde dans le vide, attendant que quelque chose se passe*");
         PersonnageNonJoueur pnj2 = new PersonnageNonJoueur("placeholder", "Tu es venu voler or noir moi !!!??! Moi était là avant !!");
