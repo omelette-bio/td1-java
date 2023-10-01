@@ -28,4 +28,8 @@ public class Metier {
                 break;
         }
     }
+    
+    public void addSort(Metier sort) {
+        this.sorts.add(sort)
+    }
 }
