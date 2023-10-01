@@ -29,7 +29,7 @@ public class Metier {
         }
     }
     
-    public void addSort(Metier sort) {
-        this.sorts.add(sort)
+    public void addSort(Sort sort) {
+        this.sorts.add(sort);
     }
 }

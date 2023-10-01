@@ -13,33 +13,9 @@ public class Lieu {
     public static final String zone3 = "Crypte";
     public static final String zone4 = "Volcan";
              
-    public Lieu(String name, ArrayList<Personnage> pnjs, int lieu) {
+    public Lieu(String name, ArrayList<Personnage> pnjs) {
         this.nom = name;
         this.pnjs = pnjs;
-
-        switch (lieu) {
-                case 1 :
-                this.nom = route1;
-                break;
-            case 2 :
-                this.nom = route2;
-                break;
-            case 3 :
-                this.nom = zone1;
-                break;
-            case 4 :
-                this.nom = zone2;
-                break;
-            case 5 :
-                this.nom = zone3;
-                break;
-            case 6 :
-                this.nom = zone4;
-                break;
-            default :
-                this.nom = ville;
-                break;
-        }
     }
     
     public void addVoisin(Lieu voisin) {

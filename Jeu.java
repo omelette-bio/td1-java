@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Jeu {
@@ -71,29 +72,34 @@ public class Jeu {
         jeu.displayText(joueur.nom + " le " + joueur.metierJoueur.nom + " est né ! Ton histoire sera inscrite dans les légendes !");
         jeu.displayText("Mais avant ça, il faut que tu te trouves un équipement !");
 
-        /* PersonnageNonJoueur pnj1 = new PersonnageNonJoueur("Carlos", "*regarde dans le vide, attendant que quelque chose se passe*");
+        PersonnageNonJoueur pnj1 = new PersonnageNonJoueur("Carlos", "*regarde dans le vide, attendant que quelque chose se passe*");
         PersonnageNonJoueur pnj2 = new PersonnageNonJoueur("placeholder", "Tu es venu voler or noir moi !!!??! Moi était là avant !!");
         PersonnageNonJoueur pnj3 = new PersonnageNonJoueur("placeholder", "placeholder");
         PersonnageNonJoueur pnj4 = new PersonnageNonJoueur("Werwilld", "placeholder");
         
-        ArrayList<PersonnageNonJoueur> pnjs_town = new ArrayList<PersonnageNonJoueur>();
+        ArrayList<Personnage> pnjs_town = new ArrayList<Personnage>();
         pnjs_town.add(pnj1);
         pnjs_town.add(pnj2);
 
-        ArrayList<PersonnageNonJoueur> pnjs_route1 = new ArrayList<PersonnageNonJoueur>();
+        ArrayList<Personnage> pnjs_route1 = new ArrayList<Personnage>();
         pnjs_route1.add(pnj3);
 
-        ArrayList<PersonnageNonJoueur> pnjs_route2 = new ArrayList<PersonnageNonJoueur>();
+        ArrayList<Personnage> pnjs_route2 = new ArrayList<Personnage>();
         pnjs_route2.add(pnj4);
 
 
-        Lieu lieu1 = new Lieu("Padhiver", pnjs_town);
-        Lieu lieu2 = new Lieu("Route Nord", pnjs_route1);
-        Lieu lieu3 = new Lieu("Route Sud", pnjs_route2);
+        Lieu lieu1 = new Lieu(Lieu.ville, pnjs_town);
+        Lieu lieu2 = new Lieu(Lieu.route1, pnjs_route1);
+        Lieu lieu3 = new Lieu(Lieu.route2, pnjs_route2);
 
         lieu1.addVoisin(lieu2);
         lieu1.addVoisin(lieu3);
-        */
+        
+        // code temporaire pour tester les lieux
+        jeu.displayText("liste des lieux, de leurs pnjs et de leurs voisins :");
+        jeu.displayText(lieu1.nom + " : " + lieu1.pnjs + " : " + lieu1.lieuxVoisins);
+        jeu.displayText(lieu2.nom + " : " + lieu2.pnjs + " : " + lieu2.lieuxVoisins);
+        jeu.displayText(lieu3.nom + " : " + lieu3.pnjs + " : " + lieu3.lieuxVoisins);
 
         jeu.sc.close();
     }
