@@ -4,6 +4,7 @@ Personnage
 + hp : int
 + manaMax : int
 + mana : int
++ lieu : Lieu
 + attaquer() : int
 + subirDegats(int degats) : void
 + lancerSort(Sort sort) : int
