@@ -34,8 +34,8 @@ Monstre
 + dragon = "Dragon" : public static final String
 
 Metier
-+ nom : String
-+ description : String
+# nom : String
+# description : String
 + magicien = "Magicien" : public static final String
 + guerrier = "Guerrier" : public static final String
 + barbare = "Barbare" : public static final String
@@ -53,8 +53,9 @@ Sort
 
 Lieu 
 + nom : String
-+ personnages : ArrayList<Personnage>
-+ lieuxVoisins : ArrayList<Lieu>
+# personnages : ArrayList<Personnage>
+# lieuxVoisins : ArrayList<Lieu>
++ nbMonstres : int
 + addVoisin(Lieu l) : void
 
 Jeu
