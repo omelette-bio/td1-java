@@ -49,6 +49,7 @@ Sort
 + nom : String
 + description : String
 + degats : int
++ mana : int
 
 Lieu 
 + ville = "Padhiver" : public static final String
