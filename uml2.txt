@@ -1,30 +1,32 @@
 Personnage
-+ nom : String
-+ hpMax : int
-+ hp : int
-+ manaMax : int
-+ mana : int
-+ lieu : Lieu
-+ attaquer() : int
+# nom : String
+# hpMax : int
+# hp : int
 + subirDegats(int degats) : void
-+ lancerSort(Sort sort) : int
-
-PersonnageJoueur
--> Personnage
-+ métier : Metier
-+ niveau : int
-+ stuff : Stuff
-+ gagneNiveau() : void
-+ repos() : void
-+ parler() : void
++ displayName() : void
 
 PersonnageNonJoueur
 -> Personnage
-+ phrase : String
+# phrase : String
 + repondre() : void
 
-Monstre
+PersonnageActif
 -> Personnage
+# manaMax : int
+# mana : int
+# degats : int
+# sorts : ArrayList<Sort>
++ attaquer(Personnage p) : void
+
+PersonnageJoueur
+-> PersonnageActif
+# metier : Metier
+# stuff : Stuff
+# lieu : Lieu
++ changerLieu(Lieu l) : void
+
+Monstre
+-> PersonnageActif
 + orc = "Orc" : public static final String
 + gobelin = "Gobelin" : public static final String
 + chauveSouris = "Chauve-souris" : public static final String
@@ -37,7 +39,6 @@ Metier
 + magicien = "Magicien" : public static final String
 + guerrier = "Guerrier" : public static final String
 + barbare = "Barbare" : public static final String
-+ sorts : ArrayList<Sort>
 
 Stuff
 + nom : String
@@ -57,6 +58,7 @@ Lieu
 + addVoisin(Lieu l) : void
 
 Jeu
-+ display_text(String text) : void
++ displayText(String text) : void
 + choice(String[] choices) : int
-+ display_fight(PersonnageJoueur pj, Monstre m) : void
++ combats(PersonnageJoueur pj, Monstre m) : void
++ displayPnjs(Lieu l) : void
