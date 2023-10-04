@@ -9,7 +9,6 @@ public class PersonnageJoueur extends Personnage{
         switch(this.metierJoueur.nom){
             case Metier.magicien:
                 this.equipementJoueur = new Stuff("Dague","Une dague en fer", 2);
-                
                 break;
             case Metier.guerrier:
                 this.equipementJoueur = new Stuff("Epée","Une épée en fer", 4);
