@@ -5,7 +5,6 @@ public class PersonnageJoueur extends Personnage{
     PersonnageJoueur(String nomJ, int metierJ){
         super(nomJ);
         this.metierJoueur = new Metier(metierJ);
-        // make a switch on the metierJ to set the equipementJoueur
         switch(this.metierJoueur.nom){
             case Metier.magicien:
                 this.equipementJoueur = new Stuff("Dague","Une dague en fer", 2);
