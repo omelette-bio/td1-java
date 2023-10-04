@@ -30,7 +30,7 @@ public class MainJeu {
         PersonnageNonJoueur pnj1 = new PersonnageNonJoueur("Carlos", "*regarde dans le vide, attendant que quelque chose se passe*");
         PersonnageNonJoueur pnj2 = new PersonnageNonJoueur("placeholder", "Tu es venu voler or noir moi !!!??! Moi était là avant !!");
         PersonnageNonJoueur pnj3 = new PersonnageNonJoueur("placeholder", "placeholder");
-        PersonnageNonJoueur pnj4 = new PersonnageNonJoueur("Werwilld", "placeholder");
+        PersonnageNonJoueur pnj4 = new PersonnageNonJoueur("Werwilld", "Werwilld pensait à la frolein de sa vie : Rochta. Une orc magnifiquement musclée. Mais elle a trompé Werwilld avec sheiz d'orc là bas ! Werwilld a donc suivi sheiz d'orc mais en pensant à elle Werwilld s'est pris sheiz d'arbre. Il a cassé magnifique nez et tacher moustache de Werwilld....comment vais-je pouvoir la venger ainsi......");
         
         ArrayList<Personnage> pnjs_town = new ArrayList<Personnage>();
         pnjs_town.add(pnj1);
