@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Metier { 
     protected String nom;
     protected String description;
@@ -8,7 +6,7 @@ public class Metier {
     protected int pa;
 
     protected Stuff stuff;
-    protected ArrayList<Sort> sorts;
+    protected Sort[] sorts = new Sort[2];
 
     public Metier(String nom, String description) {
         this.nom = nom;
