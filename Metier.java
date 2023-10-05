@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Metier { 
     protected String nom;
     protected String description;
-    
+
     protected int pv;
     protected int mana;
 
