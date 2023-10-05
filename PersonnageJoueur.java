@@ -16,9 +16,9 @@ public class PersonnageJoueur extends PersonnageActif{
                 this.metierJoueur = new Barbare();
                 break;
         }
-        this.pvMax = metierJoueur.pvMax;
+        this.pvMax = metierJoueur.pv;
         this.pv = metierJoueur.pv;
-        this.paMax = metierJoueur.paMax;
+        this.paMax = metierJoueur.pa;
         this.pa = metierJoueur.pa;
         this.equipementJoueur = metierJoueur.stuff;
     }
