@@ -14,19 +14,22 @@ public class MainJeu {
         jeu.displayText("Il est l'heure de choisir ton metier !");
         jeu.displayText("laisse moi te les présenter :");
         jeu.displayText("Le " + Magicien.nom + " : " + Magicien.description);
+        jeu.displayText("Le " + Guerrier.nom + " : " + Guerrier.description);
         jeu.displayText("Le " + Barbare.nom + " : " + Barbare.description);
         jeu.displayText("Qui veux-tu être ?");
 
-        String[] metier = new String[]{Magicien.nom, Barbare.nom};
+        String[] metier = new String[]{Magicien.nom, Guerrier.nom, Barbare.nom};
 
         int choice = jeu.choice(metier);
 
         System.out.println(choice);
 
-        // PersonnageJoueur joueur = new PersonnageJoueur(name, choice);
+        PersonnageJoueur joueur = new PersonnageJoueur(name, choice);
 
-        // jeu.displayText(joueur.nom + " le " + joueur.metierJoueur.nom + " est né ! Ton histoire sera inscrite dans les légendes !");
-        // jeu.displayText("Mais avant ça, il faut que tu te trouves un équipement !");
+        jeu.displayText(joueur.nom + " le " + joueur.metierJoueur.nom + " est né ! Ton histoire sera inscrite dans les légendes !");
+        jeu.displayText("Mais avant ça, il faut que tu te trouves un équipement !");
+        jeu.displayText("Voici une " + joueur.equipementJoueur.nom);
+        jeu.displayText("C'est une " + joueur.equipementJoueur.description);
 
         // PersonnageNonJoueur pnj1 = new PersonnageNonJoueur("Carlos", "*regarde dans le vide, attendant que quelque chose se passe*");
         // PersonnageNonJoueur pnj2 = new PersonnageNonJoueur("placeholder", "Tu es venu voler or noir moi !!!??! Moi était là avant !!");
