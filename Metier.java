@@ -5,7 +5,7 @@ public class Metier {
     protected String description;
 
     protected int pv;
-    protected int mana;
+    protected int pa;
 
     protected Stuff stuff;
     protected ArrayList<Sort> sorts;
