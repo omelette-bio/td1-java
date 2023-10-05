@@ -55,7 +55,8 @@ Lieu
 + nom : String
 # personnages : ArrayList<Personnage>
 # lieuxVoisins : ArrayList<Lieu>
-+ nbMonstres : int
+# nbMonstres : int
++ plusDeMonstre() : boolean
 + addVoisin(Lieu l) : void
 
 Jeu
