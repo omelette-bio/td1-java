@@ -1,8 +1,8 @@
-
 public class Lieu {
     protected String nom;
     protected Personnage[] pnjs;
     protected Lieu[] lieuxVoisins;
+    protected int nbMonstres;
 
     public static final String ville = "Padhiver";
     public static final String route1 = "Route Nord";
@@ -19,6 +19,10 @@ public class Lieu {
     
     public void addVoisin(Lieu[] voisins) {
         this.lieuxVoisins = voisins;
+    }
+
+    public boolean Monstres( ) {
+
     }
 
 }
