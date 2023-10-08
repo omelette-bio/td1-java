@@ -31,29 +31,23 @@ public class MainJeu {
         jeu.displayText("Voici une " + joueur.equipementJoueur.nom);
         jeu.displayText("C'est une " + joueur.equipementJoueur.description);
 
-        // PersonnageNonJoueur pnj1 = new PersonnageNonJoueur("Carlos", "*regarde dans le vide, attendant que quelque chose se passe*");
-        // PersonnageNonJoueur pnj2 = new PersonnageNonJoueur("placeholder", "Tu es venu voler or noir moi !!!??! Moi était là avant !!");
-        // PersonnageNonJoueur pnj3 = new PersonnageNonJoueur("placeholder", "placeholder");
-        // PersonnageNonJoueur pnj4 = new PersonnageNonJoueur("Werwilld", "Werwilld pensait à la frolein de sa vie : Rochta. Une orc magnifiquement musclée. Mais elle a trompé Werwilld avec sheiz d'orc là bas ! Werwilld a donc suivi sheiz d'orc mais en pensant à elle Werwilld s'est pris sheiz d'arbre. Il a cassé magnifique nez et tacher moustache de Werwilld....comment vais-je pouvoir la venger ainsi......");
+        PersonnageNonJoueur pnj1 = new PersonnageNonJoueur("Carlos", "*regarde dans le vide, attendant que quelque chose se passe*");
+        PersonnageNonJoueur pnj2 = new PersonnageNonJoueur("placeholder", "Tu es venu voler or noir moi !!!??! Moi était là avant !!");
+        PersonnageNonJoueur pnj3 = new PersonnageNonJoueur("placeholder", "placeholder");
+        PersonnageNonJoueur pnj4 = new PersonnageNonJoueur("Werwilld", "Werwilld pensait à la frolein de sa vie : Rochta. Une orc magnifiquement musclée. Mais elle a trompé Werwilld avec sheiz d'orc là bas ! Werwilld a donc suivi sheiz d'orc mais en pensant à elle Werwilld s'est pris sheiz d'arbre. Il a cassé magnifique nez et tacher moustache de Werwilld....comment vais-je pouvoir la venger ainsi......");
         
-        // ArrayList<Personnage> pnjs_town = new ArrayList<Personnage>();
-        // pnjs_town.add(pnj1);
-        // pnjs_town.add(pnj2);
+        Personnage[] pnjs_town = new Personnage[]{pnj1, pnj2};
+        Personnage[] pnjs_route1 = new Personnage[]{pnj3};
+        Personnage[] pnjs_route2 = new Personnage[]{pnj4};
 
-        // ArrayList<Personnage> pnjs_route1 = new ArrayList<Personnage>();
-        // pnjs_route1.add(pnj3);
+        Lieu lieu1 = new Lieu(Lieu.ville, pnjs_town);
+        Lieu lieu2 = new Lieu(Lieu.route1, pnjs_route1);
+        Lieu lieu3 = new Lieu(Lieu.route2, pnjs_route2);
 
-        // ArrayList<Personnage> pnjs_route2 = new ArrayList<Personnage>();
-        // pnjs_route2.add(pnj4);
-
-
-        // Lieu lieu1 = new Lieu(Lieu.ville, pnjs_town);
-        // Lieu lieu2 = new Lieu(Lieu.route1, pnjs_route1);
-        // Lieu lieu3 = new Lieu(Lieu.route2, pnjs_route2);
-
-        // lieu1.addVoisin(lieu2);
-        // lieu1.addVoisin(lieu3);
+        Lieu[] voisins_ville = new Lieu[]{lieu2, lieu3};
         
+        lieu1.addVoisin(voisins_ville);
+
         // // code temporaire pour tester les lieux
         // jeu.displayText("liste des lieux, de leurs pnjs et de leurs voisins :");
         // jeu.displayText(lieu1.nom + " : " + lieu1.pnjs + " : " + lieu1.lieuxVoisins);
