@@ -21,8 +21,7 @@ public class Lieu {
         this.lieuxVoisins = voisins;
     }
 
-    public boolean Monstres( ) {
-
+    public boolean noMonsters() {
+        return this.nbMonstres == 0;
     }
-
 }
