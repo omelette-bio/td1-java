@@ -27,32 +27,57 @@ PersonnageJoueur
 
 Monstre
 -> PersonnageActif
-+ orc = "Orc" : public static final String
-+ gobelin = "Gobelin" : public static final String
-+ chauveSouris = "Chauve-souris" : public static final String
-+ necromant = "Nécromant" : public static final String
-+ dragon = "Dragon" : public static final String
+
+Orc
+-> Monstre
++ nom = "Orc" : public static final String
+
+Gobelin
+-> Monstre
++ nom = "Gobelin" : public static final String
+
+ChauveSouris
+-> Monstre
++ nom = "Chauve-souris" : public static final String
+
+Necromant
+-> Monstre
++ nom = "Nécromant" : public static final String
+
+Dragon
+-> Monstre
++ nom = "Dragon" : public static final String
+
 
 Metier
 # nom : String
 # description : String
-+ magicien = "Magicien" : public static final String
-+ guerrier = "Guerrier" : public static final String
-+ barbare = "Barbare" : public static final String
+
+Magicien
+-> Metier
++ nom = "Magicien" : public static final String
+
+Guerrier
+-> Metier
++ nom = "Guerrier" : public static final String
+
+Barbare
+-> Metier
++ nom = "Barbare" : public static final String
 
 Stuff
-+ nom : String
-+ description : String
-+ degats : int
+# nom : String
+# description : String
+# degats : int
 
 Sort
-+ nom : String
-+ description : String
-+ degats : int
-+ mana : int
+# nom : String
+# description : String
+# degats : int
+# mana : int
 
 Lieu 
-+ nom : String
+# nom : String
 # personnages : ArrayList<Personnage>
 # lieuxVoisins : ArrayList<Lieu>
 # nbMonstres : int

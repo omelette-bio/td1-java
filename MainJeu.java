@@ -40,9 +40,9 @@ public class MainJeu {
         Personnage[] pnjs_route1 = new Personnage[]{pnj3};
         Personnage[] pnjs_route2 = new Personnage[]{pnj4};
 
-        Lieu lieu1 = new Lieu(Lieu.ville, pnjs_town);
-        Lieu lieu2 = new Lieu(Lieu.route1, pnjs_route1);
-        Lieu lieu3 = new Lieu(Lieu.route2, pnjs_route2);
+        Lieu lieu1 = new Lieu("Padhiver", pnjs_town);
+        Lieu lieu2 = new Lieu("Route Nord", pnjs_route1);
+        Lieu lieu3 = new Lieu("Route Sud", pnjs_route2);
 
         Lieu[] voisins_ville = new Lieu[]{lieu2, lieu3};
         
