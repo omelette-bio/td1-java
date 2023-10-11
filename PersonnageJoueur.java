@@ -25,6 +25,10 @@ public class PersonnageJoueur extends PersonnageActif{
         this.niveau = 1;
     }
 
+    public void niveauSuperieur(){
+        this.niveau ++;
+    }
+
     public boolean gameNotFinished() {
         return this.pv > 0 && this.niveau < 10;
     }
