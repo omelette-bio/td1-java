@@ -56,7 +56,7 @@ public class MainJeu {
 
         while (joueur.gameNotFinished()) {
           joueur.lieuJoueur.displayOptions();
-          joueur.lieuJoueur.choices();
+          joueur.lieuJoueur.choices(joueur);
         }
         
         // // code temporaire pour tester les lieux
