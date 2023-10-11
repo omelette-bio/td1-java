@@ -8,7 +8,9 @@ public class Personnage{
         this.pvMax = 5;
         this.pv = 5;
     }
-    public void recevoirDegat(int degatsSubis){}
+    public void recevoirDegat(int degatsSubis){
+        this.pv = this.pv - degatsSubis;
+    }
     
     public String afficherNom(){
         return this.nom;
