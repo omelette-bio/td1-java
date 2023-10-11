@@ -2,6 +2,7 @@ public class PersonnageJoueur extends PersonnageActif{
     protected Metier metierJoueur;
     protected Stuff equipementJoueur;
     protected Lieu lieuJoueur;
+    int niveau;
     
     PersonnageJoueur(String nomJ, int metierJ){
         super(nomJ);
@@ -21,5 +22,14 @@ public class PersonnageJoueur extends PersonnageActif{
         this.paMax = metierJoueur.pa;
         this.pa = metierJoueur.pa;
         this.equipementJoueur = metierJoueur.stuff;
+        this.niveau = 1;
+    }
+
+    public boolean gameNotFinished() {
+        return this.pv > 0 && this.niveau < 10;
+    }
+
+    public void changerLieu(Lieu lieu) {
+        this.lieuJoueur = lieu;
     }
 }

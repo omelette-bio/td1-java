@@ -1,4 +1,7 @@
+import java.util.Scanner;
+
 public class Lieu {
+    Scanner sc = new Scanner(System.in);
     protected String nom;
     protected Personnage[] pnjs;
     protected Lieu[] lieuxVoisins;
@@ -32,7 +35,21 @@ public class Lieu {
         System.out.println();
     }
 
-    public void choices(int choice) {
+    public void choices() {
+        int choice = sc.nextInt();
+
+        int lengthVoisins = this.lieuxVoisins.length;
+        int lengthPnjs = this.pnjs.length;
         
+        if (choice <= lengthVoisins) {
+            System.out.println("Vous allez vers " + this.lieuxVoisins[choice - 1].nom);
+        } 
+        else if (choice <= lengthVoisins + lengthPnjs) {
+            if (this.pnjs[choice - lengthVoisins - 1] instanceof PersonnageNonJoueur) {
+                ((PersonnageNonJoueur) this.pnjs[choice - lengthVoisins - 1]).repondre();
+            } else {
+                System.out.println("Vous attaquez " + this.pnjs[choice - lengthVoisins - 1].nom);
+            }
+        }
     }
 }

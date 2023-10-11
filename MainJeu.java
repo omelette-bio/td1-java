@@ -22,8 +22,6 @@ public class MainJeu {
 
         int choice = jeu.choice(metier);
 
-        System.out.println(choice);
-
         PersonnageJoueur joueur = new PersonnageJoueur(name, choice);
 
         jeu.displayText(joueur.nom + " le " + joueur.metierJoueur.nom + " est né ! Ton histoire sera inscrite dans les légendes !");
@@ -43,12 +41,23 @@ public class MainJeu {
         Lieu lieu1 = new Lieu("Padhiver", pnjs_town);
         Lieu lieu2 = new Lieu("Route Nord", pnjs_route1);
         Lieu lieu3 = new Lieu("Route Sud", pnjs_route2);
+        Lieu lieu4 = new Lieu("Forêt", pnjs_route2);
+        Lieu lieu5 = new Lieu("Marais des morts", pnjs_route2);
 
         Lieu[] voisins_ville = new Lieu[]{lieu2, lieu3};
+        Lieu[] voisins_route1 = new Lieu[]{lieu1, lieu4};
+        Lieu[] voisins_route2 = new Lieu[]{lieu1, lieu5};
         
         lieu1.addVoisin(voisins_ville);
+        lieu2.addVoisin(voisins_route1);
+        lieu3.addVoisin(voisins_route2);
 
-        lieu1.displayOptions();
+        joueur.changerLieu(lieu1);
+
+        while (joueur.gameNotFinished()) {
+          joueur.lieuJoueur.displayOptions();
+          joueur.lieuJoueur.choices();
+        }
         
         // // code temporaire pour tester les lieux
         // jeu.displayText("liste des lieux, de leurs pnjs et de leurs voisins :");
