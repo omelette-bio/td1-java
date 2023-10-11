@@ -1,4 +1,4 @@
-public class Metier { 
+public abstract class Metier { 
     protected String nom;
     protected String description;
 
