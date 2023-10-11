@@ -12,7 +12,7 @@ public class PersonnageActif extends Personnage{
         this.sorts = new Sort[4];
     }
 
-    public void attaquer(Personnage p){
-        
+    public int attaquer(PersonnageActif p){
+        return p.degats;
     }
 }
