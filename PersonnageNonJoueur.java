@@ -6,5 +6,8 @@ public class PersonnageNonJoueur extends Personnage{
         super(nomPNJ);
         this.phrase = PhrasePNJ;
     }
-    /* public void repondre(){} */
+    
+    public void repondre(){
+        System.out.println(this.nom+" : "+this.phrase);
+    }
 }

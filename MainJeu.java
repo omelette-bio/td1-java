@@ -48,6 +48,8 @@ public class MainJeu {
         
         lieu1.addVoisin(voisins_ville);
 
+        lieu1.displayOptions();
+        
         // // code temporaire pour tester les lieux
         // jeu.displayText("liste des lieux, de leurs pnjs et de leurs voisins :");
         // jeu.displayText(lieu1.nom + " : " + lieu1.pnjs + " : " + lieu1.lieuxVoisins);
