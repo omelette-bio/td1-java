@@ -1,4 +1,4 @@
-public class PersonnageActif extends Personnage{
+public abstract class PersonnageActif extends Personnage{
     protected int paMax;
     protected int pa;
     protected int degats;

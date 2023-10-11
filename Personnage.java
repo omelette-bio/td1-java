@@ -1,4 +1,4 @@
-public class Personnage{
+public abstract class Personnage{
     protected String nom;
     protected int pvMax;
     protected int pv;
