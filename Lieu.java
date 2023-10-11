@@ -35,14 +35,16 @@ public class Lieu {
         System.out.println();
     }
 
-    public void choices() {
+    public void choices(PersonnageJoueur joueur) {
         int choice = sc.nextInt();
 
         int lengthVoisins = this.lieuxVoisins.length;
         int lengthPnjs = this.pnjs.length;
         
         if (choice <= lengthVoisins) {
-            System.out.println("Vous allez vers " + this.lieuxVoisins[choice - 1].nom);
+            System.out.println("Vous allez vers " + this.lieuxVoisins[choice - 1].nom + "...");
+            Jeu.delay(900);
+            joueur.changerLieu(this.lieuxVoisins[choice - 1]);
         } 
         else if (choice <= lengthVoisins + lengthPnjs) {
             if (this.pnjs[choice - lengthVoisins - 1] instanceof PersonnageNonJoueur) {

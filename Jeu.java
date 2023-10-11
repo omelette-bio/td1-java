@@ -3,16 +3,20 @@ import java.util.Scanner;
 public class Jeu {
 
     Scanner sc = new Scanner(System.in);
+    
+    public static void delay(int time){
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
     // method to display text with a delay of 1s to make it more realistic
     public void displayText(String text){
         System.out.println("> "+text);
         // the part of the code that makes the delay
-        try {
-            Thread.sleep(900);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        delay(1000);
     }
 
     // method to display the various choices of the player, the choices are in a String array
