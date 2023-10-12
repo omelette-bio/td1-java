@@ -1,0 +1,3 @@
+changer la ligne "Vous faîtes face..." avec un Jeu.displayText
+finir la doc
+faire l'affichage sur le combat

@@ -2,32 +2,30 @@
 
 public class MainJeu {
   public static void main(String[] args) {
-        Jeu jeu = new Jeu();
-
-        jeu.displayText("Bonjour aventurier !");
-        jeu.displayText("Bienvenue dans les nuits de Padhiver !");
-        jeu.displayText("Je suis votre guide, votre maitre de jeu !");
-        jeu.displayText("Bien, passons à la création de ton personnage !");
-        jeu.displayText("Quel est ton nom aventurier ?");
-        String name = jeu.sc.next();
-        jeu.displayText(name + " ? C'est un joli nom !");
-        jeu.displayText("Il est l'heure de choisir ton metier !");
-        jeu.displayText("laisse moi te les présenter :");
-        jeu.displayText("Le " + Magicien.nom + " : " + Magicien.description);
-        jeu.displayText("Le " + Guerrier.nom + " : " + Guerrier.description);
-        jeu.displayText("Le " + Barbare.nom + " : " + Barbare.description);
-        jeu.displayText("Qui veux-tu être ?");
+        Jeu.displayText("Bonjour aventurier !");
+        Jeu.displayText("Bienvenue dans les nuits de Padhiver !");
+        Jeu.displayText("Je suis ton guide, ton maitre de jeu !");
+        Jeu.displayText("Bien, passons à la création de ton personnage !");
+        Jeu.displayText("Quel est ton nom aventurier ?");
+        String name = Jeu.sc.next();
+        Jeu.displayText(name + " ? C'est un joli nom !");
+        Jeu.displayText("Il est l'heure de choisir ton metier !");
+        Jeu.displayText("laisse moi te les présenter :");
+        Jeu.displayText("Le " + Magicien.nom + " : " + Magicien.description);
+        Jeu.displayText("Le " + Guerrier.nom + " : " + Guerrier.description);
+        Jeu.displayText("Le " + Barbare.nom + " : " + Barbare.description);
+        Jeu.displayText("Qui veux-tu être ?");
 
         String[] metier = new String[]{Magicien.nom, Guerrier.nom, Barbare.nom};
 
-        int choice = jeu.choice(metier);
+        int choice = Jeu.choice(metier);
 
         PersonnageJoueur joueur = new PersonnageJoueur(name, choice);
 
-        jeu.displayText(joueur.nom + " le " + joueur.metierJoueur.nom + " est né ! Ton histoire sera inscrite dans les légendes !");
-        jeu.displayText("Mais avant ça, il faut que tu te trouves un équipement !");
-        jeu.displayText("Voici une " + joueur.equipementJoueur.nom);
-        jeu.displayText("C'est une " + joueur.equipementJoueur.description);
+        Jeu.displayText(joueur.nom + " le " + joueur.metierJoueur.nom + " est né ! Ton histoire sera inscrite dans les légendes !");
+        Jeu.displayText("Mais avant ça, il faut que tu te trouves un équipement !");
+        Jeu.displayText("Voici une " + joueur.equipementJoueur.nom);
+        Jeu.displayText("C'est une " + joueur.equipementJoueur.description);
 
         PersonnageNonJoueur pnj1 = new PersonnageNonJoueur("Carlos", "*regarde dans le vide, attendant que quelque chose se passe*");
         PersonnageNonJoueur pnj2 = new PersonnageNonJoueur("Jorji", "Tu es venu voler or noir moi !!!??! Moi était là avant !!");
@@ -84,6 +82,14 @@ public class MainJeu {
         }
 
 
-        jeu.sc.close();
+        Jeu.sc.close();
+        joueur.sc.close();
+        ville.sc.close();
+        route1.sc.close();
+        route2.sc.close();
+        zone1.sc.close();
+        zone2.sc.close();
+        zone3.sc.close();
+        zone4.sc.close();
     }
 }

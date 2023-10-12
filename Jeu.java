@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Jeu {
 
-    Scanner sc = new Scanner(System.in);
+    protected static Scanner sc = new Scanner(System.in);
     
     public static void delay(int time){
         try {
@@ -13,14 +13,14 @@ public class Jeu {
     }
 
     // method to display text with a delay of 1s to make it more realistic
-    public void displayText(String text){
+    public static void displayText(String text){
         System.out.println("> "+text);
         // the part of the code that makes the delay
         delay(1000);
     }
 
     // method to display the various choices of the player, the choices are in a String array
-    public int choice(String[] choices){
+    public static int choice(String[] choices){
         for (int i = 0; i < choices.length; i++) {
             System.out.print(i + 1 + ". " + choices[i] + "  ");
         }
@@ -42,7 +42,9 @@ public class Jeu {
             p1.afficherOptions();
             p2.subirDegats(p1.attaquer());
 
-            p1.subirDegats(p2.attaquer());
+            if (p2.estVivant()){
+                p1.subirDegats(p2.attaquer());
+            }
         }
         if (p1.estVivant()) {
             return 1;
