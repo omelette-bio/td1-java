@@ -12,11 +12,16 @@ public abstract class PersonnageActif extends Personnage{
         this.sorts = null;
     }
 
-    public int attaquer(PersonnageActif p){
-        return p.degats;
+    public int attaquer(){
+        return this.degats;
     }
 
     public boolean estVivant(){
         return this.pv > 0;
+    }
+
+    public int utiliserSort(Sort s){
+        this.pv += s.renduPv;
+        return s.degats;
     }
 }

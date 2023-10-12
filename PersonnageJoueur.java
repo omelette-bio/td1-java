@@ -36,4 +36,16 @@ public class PersonnageJoueur extends PersonnageActif{
     public void changerLieu(Lieu lieu) {
         this.lieuJoueur = lieu;
     }
+
+    public void afficherOptions(){
+        System.out.println();
+        System.out.println("Vous faites face à votre ennemi, que voulez-vous faire ?");
+        System.out.print("1. Attaquer ");
+        if (this.sorts != null){
+            for (int i = 0; i < this.sorts.length; i++) {
+                System.out.print((2+i) + ". " + this.sorts[i].nom + " ");
+            }
+        }
+        System.out.println();
+    }
 }

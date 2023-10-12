@@ -33,10 +33,10 @@ public class Jeu {
         return select;
     }
 
-    public void combat(PersonnageActif p1, PersonnageActif p2){
+    public void combat(PersonnageJoueur p1, Monstre p2){
         while (p1.estVivant() && p2.estVivant()){
             //tour du joueur
-            
+            p1.afficherOptions();
             //tour du monstre
             
         }
