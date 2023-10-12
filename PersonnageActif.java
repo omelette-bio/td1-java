@@ -22,6 +22,7 @@ public abstract class PersonnageActif extends Personnage{
 
     public int utiliserSort(Sort s){
         this.pv += s.renduPv;
+        this.pa -= s.cout;
         return s.degats;
     }
 
@@ -32,6 +33,6 @@ public abstract class PersonnageActif extends Personnage{
         }
         System.out.println();
     }
-    
+
     public abstract int attaquer();
 }
