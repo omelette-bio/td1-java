@@ -5,10 +5,6 @@ public class Barbare extends Metier {
   Barbare() {
     super(nom, description);
     this.pv = 9;
-    this.pa = 4;
-
-    this.sorts[0] = new Sort("Grizzly Bear Death Choke", "vous passez derrière votre ennemi pour lui broyer le cou", 4, 2);
-    this.sorts[1] = new Sort("Rhino Charge Rib Breaker", "vous foncez dans votre ennemi, broyant ses côtes", 15, 7);
 
     this.stuff = new Stuff("Hache", "Une hache en fer, vous ressentez toute la folie meurtière qui vient avec.", 5);
   }

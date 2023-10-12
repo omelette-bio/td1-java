@@ -6,7 +6,7 @@ public abstract class Metier {
     protected int pa;
 
     protected Stuff stuff;
-    protected Sort[] sorts = new Sort[4];
+    protected Sort[] sorts = null;
 
     public Metier(String nom, String description) {
         this.nom = nom;

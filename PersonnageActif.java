@@ -9,10 +9,14 @@ public abstract class PersonnageActif extends Personnage{
         this.paMax = 0;
         this.pa = 0;
         this.degats = 1;
-        this.sorts = new Sort[4];
+        this.sorts = null;
     }
 
     public int attaquer(PersonnageActif p){
         return p.degats;
+    }
+
+    public boolean estVivant(){
+        return this.pv > 0;
     }
 }

@@ -21,6 +21,7 @@ public class Lieu {
     }
 
     public void displayOptions() {
+        System.out.println();
         System.out.println("Vous êtes à " + this.nom + ", que voulez-vous faire ?");
         int i = 1;
         for (int j = 0; j < this.lieuxVoisins.length; j++) {
@@ -29,7 +30,11 @@ public class Lieu {
         }
         System.out.println();
         for (int j = 0; j < this.pnjs.length; j++) {
-            System.out.print(i + ". Parler à " + this.pnjs[j].nom + " ");
+            if (this.pnjs[j] instanceof PersonnageNonJoueur){
+                System.out.print(i + ". Parler à " + this.pnjs[j].nom + " ");
+            } else if (this.pnjs[j] instanceof Monstre){
+                System.out.print(i + ". Attaquer " + this.pnjs[j].nom + " ");
+            }
             i++;
         }
         System.out.println();
@@ -49,6 +54,7 @@ public class Lieu {
         else if (choice <= lengthVoisins + lengthPnjs) {
             if (this.pnjs[choice - lengthVoisins - 1] instanceof PersonnageNonJoueur) {
                 ((PersonnageNonJoueur) this.pnjs[choice - lengthVoisins - 1]).repondre();
+                Jeu.delay(1200);
             } else {
                 System.out.println("Vous attaquez " + this.pnjs[choice - lengthVoisins - 1].nom);
             }

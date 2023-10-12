@@ -7,6 +7,7 @@ public class Magicien extends Metier {
     this.pv = 7;
     this.pa = 8;
     
+    this.sorts = new Sort[2];
     this.sorts[0] = new Sort("Rayon de givre", "un rayon de givre", 4, 2);
     this.sorts[1] = new Sort("Boule de feu", "une boule de feu", 15, 9);
 

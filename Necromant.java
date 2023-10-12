@@ -8,8 +8,11 @@ public class Necromant extends Monstre {
 
     this.degats = 8;
 
-    this.paMax = ;
-    this.pa = ;
+    this.paMax = 10;
+    this.pa = 10;
+
+    this.sorts = new Sort[1];
+    this.sorts[0] = new Sort("Transfert de vie", "Absorbe toute forme de vie pour récupérer de la santé", 12, 5, 6);
 
   }
 }
