@@ -12,7 +12,7 @@ public abstract class PersonnageActif extends Personnage{
         this.sorts = null;
     }
 
-    public int attaquer(){
+    public int lancerDegats(){
         return this.degats;
     }
 
@@ -24,4 +24,14 @@ public abstract class PersonnageActif extends Personnage{
         this.pv += s.renduPv;
         return s.degats;
     }
+
+    public void afficheInfos(){
+        System.out.println(this.nom + ":  pv: " + this.pv + "/" + this.pvMax + " ");
+        if (this.sorts != null){
+            System.out.print("pm: " + this.pa + "/" + this.paMax);
+        }
+        System.out.println();
+    }
+    
+    public abstract int attaquer();
 }

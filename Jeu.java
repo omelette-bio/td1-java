@@ -33,12 +33,21 @@ public class Jeu {
         return select;
     }
 
-    public void combat(PersonnageJoueur p1, Monstre p2){
+    // renvoie 0 si le joueur perd, 1 s'il gagne
+    public static int combat(PersonnageJoueur p1, Monstre p2){
         while (p1.estVivant() && p2.estVivant()){
-            //tour du joueur
+            p1.afficheInfos();
+            p2.afficheInfos();
+
             p1.afficherOptions();
-            //tour du monstre
-            
+            p2.subirDegats(p1.attaquer());
+
+            p1.subirDegats(p2.attaquer());
+        }
+        if (p1.estVivant()) {
+            return 1;
+        } else {
+            return 0;
         }
     }
 

@@ -1,8 +1,11 @@
+import java.util.Scanner;
+
 public class PersonnageJoueur extends PersonnageActif{
     protected Metier metierJoueur;
     protected Stuff equipementJoueur;
     protected Lieu lieuJoueur;
     int niveau;
+    Scanner sc = new Scanner(System.in);
     
     PersonnageJoueur(String nomJ, int metierJ){
         super(nomJ);
@@ -23,6 +26,8 @@ public class PersonnageJoueur extends PersonnageActif{
         this.pa = metierJoueur.pa;
         this.equipementJoueur = metierJoueur.stuff;
         this.niveau = 1;
+        this.degats = metierJoueur.stuff.degats;
+        this.sorts = metierJoueur.sorts;
     }
 
     public void niveauSuperieur(){
@@ -47,5 +52,16 @@ public class PersonnageJoueur extends PersonnageActif{
             }
         }
         System.out.println();
+    }
+
+    public int attaquer(){
+        int choix = sc.nextInt();
+        if (choix == 1){
+            return this.lancerDegats();
+        }
+        else if (this.sorts != null && choix < this.sorts.length + 2){
+            return this.utiliserSort(this.sorts[choix-2]);
+        }
+        return 0;
     }
 }

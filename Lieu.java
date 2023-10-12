@@ -56,7 +56,7 @@ public class Lieu {
                 ((PersonnageNonJoueur) this.pnjs[choice - lengthVoisins - 1]).repondre();
                 Jeu.delay(1200);
             } else {
-                System.out.println("Vous attaquez " + this.pnjs[choice - lengthVoisins - 1].nom);
+                nbMonstres -= Jeu.combat(joueur, (Monstre) this.pnjs[choice - lengthVoisins - 1]);
             }
         }
     }
