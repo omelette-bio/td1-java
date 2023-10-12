@@ -56,7 +56,11 @@ public class Lieu {
                 ((PersonnageNonJoueur) this.pnjs[choice - lengthVoisins - 1]).repondre();
                 Jeu.delay(1200);
             } else {
-                nbMonstres -= Jeu.combat(joueur, (Monstre) this.pnjs[choice - lengthVoisins - 1]);
+                int result = Jeu.combat(joueur, (Monstre) this.pnjs[choice - lengthVoisins - 1]);
+                if (result == 1) {
+                    this.nbMonstres -= 1;
+                    joueur.niveauSuperieur();
+                }
             }
         }
     }
