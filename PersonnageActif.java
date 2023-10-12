@@ -21,9 +21,13 @@ public abstract class PersonnageActif extends Personnage{
     }
 
     public int utiliserSort(Sort s){
-        this.pv += s.renduPv;
-        this.pa -= s.cout;
-        return s.degats;
+        if (this.pa > s.cout) {
+            this.pv += s.renduPv;
+            this.pa -= s.cout;
+            return s.degats;
+        } else {
+            return lancerDegats();
+        }
     }
 
     public void afficheInfos(){

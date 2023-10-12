@@ -63,11 +63,11 @@ public class MainJeu {
 
         ville.addVoisin(new Lieu[]{route1, route2});
         route1.addVoisin(new Lieu[]{ville, zone1});
-        route2.addVoisin(new Lieu[]{ville, zone2, zone4});
-        zone1.addVoisin(new Lieu[]{route1, zone3});
+        route2.addVoisin(new Lieu[]{ville, zone2});
+        zone1.addVoisin(new Lieu[]{route1, zone4});
         zone2.addVoisin(new Lieu[]{route2, zone3});
-        zone3.addVoisin(new Lieu[]{zone1, zone2});
-        zone4.addVoisin(new Lieu[]{zone2, zone3});
+        zone3.addVoisin(new Lieu[]{zone2});
+        zone4.addVoisin(new Lieu[]{zone1});
 
         joueur.changerLieu(ville);
 
