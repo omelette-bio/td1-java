@@ -1,5 +1,3 @@
-package JeuPadhiver;
-
 public class Necromant extends Monstre {
   public static final String nom = "Necromant";
 

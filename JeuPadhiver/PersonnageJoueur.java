@@ -1,5 +1,3 @@
-package JeuPadhiver;
-
 import java.util.Scanner;
 
 // la classe PersonnageJoueur est la classe définissant les attributs et méthodes pour le joueur, 

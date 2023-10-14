@@ -1,5 +1,3 @@
-package JeuPadhiver;
-
 public class Magicien extends Metier {
   public static final String nom = "Magicien";
   public static final String description = "Ermite de son époque, le magicien est un être solitaire doté d'une intelligence rare qui privilégie la compagnie des livres à celui des Hommes.";

@@ -1,5 +1,3 @@
-package JeuPadhiver;
-
 // La classe MainJeu permet de lancer le jeu
 public class MainJeu {
   public static void main(String[] args) {

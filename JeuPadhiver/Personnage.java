@@ -1,5 +1,3 @@
-package JeuPadhiver;
-
 public abstract class Personnage{
     protected String nom;
     protected int pvMax;

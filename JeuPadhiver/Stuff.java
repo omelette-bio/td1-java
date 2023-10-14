@@ -1,5 +1,3 @@
-package JeuPadhiver;
-
 // classe qui permet de créer des équipements
 public class Stuff {
     protected String nom;

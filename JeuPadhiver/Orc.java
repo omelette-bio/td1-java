@@ -1,5 +1,3 @@
-package JeuPadhiver;
-
 public class Orc extends Monstre {
   public static final String nom = "Orc";
 

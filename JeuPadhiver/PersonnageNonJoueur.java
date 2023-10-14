@@ -1,7 +1,4 @@
-package JeuPadhiver;
-
-
-// classe de base pour tous les personnages
+// classe pour implémenter les pnjs
 public class PersonnageNonJoueur extends Personnage{
     
     protected String phrase;

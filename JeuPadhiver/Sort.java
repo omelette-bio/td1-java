@@ -1,5 +1,3 @@
-package JeuPadhiver;
-
 public class Sort {
     protected String nom;
     protected String description;

@@ -1,5 +1,3 @@
-package JeuPadhiver;
-
 import java.util.Random;
 
 public abstract class Monstre extends PersonnageActif{

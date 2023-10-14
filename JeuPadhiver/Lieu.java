@@ -1,5 +1,3 @@
-package JeuPadhiver;
-
 import java.util.Scanner;
 
 // la classe Lieu définit les classes et méthodes permettant de gérer les lieux et ce qu'il est possible de faire dedans
