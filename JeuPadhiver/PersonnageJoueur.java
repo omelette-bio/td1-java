@@ -1,9 +1,9 @@
+package JeuPadhiver;
+
 import java.util.Scanner;
 
 // la classe PersonnageJoueur est la classe définissant les attributs et méthodes pour le joueur, 
 // elle hérite de deux classes abstraites: PersonnageActif et Personnage
-
-
 public class PersonnageJoueur extends PersonnageActif{
     protected Metier metierJoueur;
     protected Stuff equipementJoueur;

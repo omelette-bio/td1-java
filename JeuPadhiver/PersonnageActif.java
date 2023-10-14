@@ -1,5 +1,6 @@
-// la classe PersonnageActif définit les attributs et méthodes des joueurs et monstres séparément des pnjs pour qu'ils puissent s'affronter
+package JeuPadhiver;
 
+// la classe PersonnageActif définit les attributs et méthodes des joueurs et monstres séparément des pnjs pour qu'ils puissent s'affronter
 public abstract class PersonnageActif extends Personnage{
     // les attributs de la classe abstraite seront les points d'action, les dégâts, et un tableau de sorts
     protected int paMax;

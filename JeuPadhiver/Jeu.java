@@ -1,3 +1,5 @@
+package JeuPadhiver;
+
 import java.util.Scanner;
 
 // ceci est la classe principale pour notre jeu, elle définit des méthodes de base afin de permettre le bon déroulement du jeu

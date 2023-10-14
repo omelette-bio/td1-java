@@ -1,3 +1,5 @@
+package JeuPadhiver;
+
 public class Gobelin extends Monstre {
   public static final String nom = "Gobelin";
 

@@ -1,5 +1,7 @@
+package JeuPadhiver;
+
 public class ChauveSouris extends Monstre {
-  public static final String nom = "ChauveSouris";
+  public static final String nom = "Chauve-souris";
 
   ChauveSouris() {
     super (nom);
