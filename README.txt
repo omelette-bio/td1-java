@@ -16,3 +16,8 @@ Pour la structure, on est partis sur plusieurs choses :
   
   - Afin de nous permettre de mieux gérer le déroulement du jeu, nous avons créé une classe Jeu, qui nous définit des "primitives" nous permettant d'avoir des méthodes
     relatives au déroulement et à l'affichage du jeu, toutes les méthodes sont appelables depuis n'importe quelle classe du package
+  
+  - La gestion des lieux est la partie la plus importante du jeu, grâce à ça, on peut choisir ce qu'on peut afficher, ce que le joueur peut affronter, etc...
+    donc dans la classe Lieu, on doit pouvoir afficher toutes les options disponibles ainsi que pouvoir les choisirs, de plus, dans chaque lieu on doit stocker
+    tous les personnages non joueurs (pnjs ou monstres) ainsi que tous les lieux voisins, finalement, si le lieu n'a plus de monstre, le joueur peut se reposer.
+  
