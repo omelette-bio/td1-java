@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Monstre extends PersonnageActif{
+public abstract class Monstre extends PersonnageActif{
     Random rand = new Random();
     
     Monstre(String nomMonstre){
