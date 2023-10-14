@@ -101,7 +101,7 @@ public class Lieu {
 
         // si le choix du joueur est dans le tableau des Voisins, on fait partir le joueur vers un Voisin
         if (choice <= lengthVoisins) {
-            System.out.println("Vous allez vers " + this.lieuxVoisins[choice - 1].nom + "...");
+            Jeu.displayText("Vous allez vers " + this.lieuxVoisins[choice - 1].nom + "...");
             Jeu.delay(900);
             joueur.changerLieu(this.lieuxVoisins[choice - 1]);
         }

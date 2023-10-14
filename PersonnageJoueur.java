@@ -86,12 +86,14 @@ public class PersonnageJoueur extends PersonnageActif{
     // affiche les différentes options du joueur pendant un combat
     public void afficherOptions(){
         System.out.println();
-        System.out.println("Vous faites face à votre ennemi, que voulez-vous faire ?");
+        Jeu.displayText("Vous faites face à votre ennemi, que voulez-vous faire ?");
         System.out.print("1. Attaquer ");
         if (this.sorts != null){
             for (int i = 0; i < this.sorts.length; i++) {
                 // (2+i) car on a déjà le 1 réservé pour l'attaque normale
-                System.out.print((2+i) + ". " + this.sorts[i].nom + " ");
+                if (this.pa >= this.sorts[i].cout){
+                    System.out.print((2+i) + ". " + this.sorts[i].nom + " ");
+                }
             }
         }
         System.out.println();
@@ -113,11 +115,13 @@ public class PersonnageJoueur extends PersonnageActif{
     // permet de regagner toute sa vie si aucun monstre est présent
     public void repos() {
         if (this.lieuJoueur.noMonsters()) {
+            Jeu.displayText("Vous vous reposez, vous regagnez toute votre vie ainsi que tout votre mana");
             this.pv = this.pvMax;
             this.pa = this.paMax;
         }
     }
 
+    // permet de retirer des pvs au joueur
     public void subirDegats(int degats){
         if (this.metierJoueur.nom == Guerrier.nom){
             this.pv -= (degats - 2);
