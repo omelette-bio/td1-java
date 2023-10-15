@@ -21,3 +21,5 @@ Pour la structure, on est partis sur plusieurs choses :
     donc dans la classe Lieu, on doit pouvoir afficher toutes les options disponibles ainsi que pouvoir les choisirs, de plus, dans chaque lieu on doit stocker
     tous les personnages non joueurs (pnjs ou monstres) ainsi que tous les lieux voisins, finalement, si le lieu n'a plus de monstre, le joueur peut se reposer.
   
+  - on s'est rendu compte plus tard qu'il existait la même méthode dans Lieu que dans Jeu, sauf que à ce point on a plus le temps pour modifier, entre 1 partiel à préparer
+    et 1 oral d'anglais c'est compliqué.
