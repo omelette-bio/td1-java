@@ -11,8 +11,4 @@ public abstract class Personnage{
     public void subirDegats(int degatsSubis){
         this.pv = this.pv - degatsSubis;
     }
-    
-    public String afficherNom(){
-        return this.nom;
-    }
 }
