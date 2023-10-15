@@ -6,6 +6,6 @@ public class Barbare extends Metier {
     super(nom, description);
     this.pv = 9;
 
-    this.stuff = new Stuff("Hache", "Une hache en fer, vous ressentez toute la folie meurtière qui vient avec.", 5);
+    this.stuff = new Stuff("Hache", "hache en fer, vous ressentez toute la folie meurtière qui vient avec.", 5);
   }
 }
