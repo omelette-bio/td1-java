@@ -48,7 +48,7 @@ public class PersonnageJoueur extends PersonnageActif{
             curr_line += "Dégâts: " + (this.degats) + " => ";
             
             // divise les degats du joueur pour avoir les dégâts de base, puis multiplier par le nb de niveaux
-            this.degats += (this.degats / (this.niveau / 3));
+            this.degats += this.metierJoueur.stuff.degats;
             
             curr_line += (this.degats + "  ");
         }
@@ -61,12 +61,21 @@ public class PersonnageJoueur extends PersonnageActif{
             curr_line += "Puissance des sorts doublée !  ";
         }
 
+        
+        
         curr_line += ("Pv : " + (this.pvMax) + " => ");
-        
-        // divise les pvMax du joueur pour obtenir les pvMax de base, puis multiplier par le nb de niveaux
-        this.pvMax += (this.pvMax / (this.niveau - 1));
-        
+        // on ajoute les pv de base du metier
+        this.pvMax += this.metierJoueur.pv;
         curr_line += (this.pvMax + "  ");
+        
+        
+        // on augmente les pa si le joueur a une barre de mana
+        if (this.paMax > 0){
+            curr_line += ("Pa : " + (this.paMax) + " => ");
+            // on ajoute les pa de base du métier
+            this.paMax += this.metierJoueur.pa;
+            curr_line += (this.paMax + "  ");
+        }
 
         Jeu.displayText(curr_line);
     }
