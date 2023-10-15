@@ -14,6 +14,8 @@ Pour la structure, on est partis sur plusieurs choses :
     dont hériteront tous les monstres que l'on va créer, cette structure pour les personnages nous permet de gérer bien plus facilement par la suite tous les monstres
     et pnjs du jeu.
   
+  - Pour le joueur on a une classe métier et une classe de stuff qui nous permettra une meilleure gestion des deux.
+
   - Afin de nous permettre de mieux gérer le déroulement du jeu, nous avons créé une classe Jeu, qui nous définit des "primitives" nous permettant d'avoir des méthodes
     relatives au déroulement et à l'affichage du jeu, toutes les méthodes sont appelables depuis n'importe quelle classe du package
   
