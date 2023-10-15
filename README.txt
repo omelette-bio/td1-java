@@ -25,3 +25,5 @@ Pour la structure, on est partis sur plusieurs choses :
   
   - on s'est rendu compte plus tard qu'il existait la même méthode dans Lieu que dans Jeu, sauf que à ce point on a plus le temps pour modifier, entre 1 partiel à préparer
     et 1 oral d'anglais c'est compliqué.
+  
+  - Il y a un cooldown plus long pour le changement de lieu pour mimer le temps de voyage
